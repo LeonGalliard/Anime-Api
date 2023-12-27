@@ -1,7 +1,7 @@
 package com.example.newproject.main.api
 
-import com.example.newproject.SearchedAnime
-import com.example.newproject.TopAnime
+import com.example.newproject.main.SearchedAnime
+import com.example.newproject.main.TopAnime
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

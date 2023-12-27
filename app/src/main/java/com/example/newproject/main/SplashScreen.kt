@@ -1,19 +1,27 @@
 package com.example.newproject.main
 
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
+import com.example.newproject.R
 import kotlin.Result
 
 
 import com.google.gson.annotations.SerializedName
 
-data class SearchedAnime(
-    @SerializedName("last_page")
-    val lastPage: Int,
-    @SerializedName("request_cache_expiry")
-    val requestCacheExpiry: Int,
-    @SerializedName("request_cached")
-    val requestCached: Boolean,
-    @SerializedName("request_hash")
-    val requestHash: String,
-    @SerializedName("results")
-    val results: List<Result>
-)
+class SplashScreen : AppCompatActivity() {
+    private val SPLASH_TIME_OUT: Long = 2000
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash_screen)
+
+        Handler().postDelayed({
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+            finish()
+        }, SPLASH_TIME_OUT)
+    }
+}

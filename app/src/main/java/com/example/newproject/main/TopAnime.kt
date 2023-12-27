@@ -13,5 +13,5 @@ data class TopAnime(
     @SerializedName("request_hash")
     val requestHash: String,
     @SerializedName("data")
-    val top: List<Result>
+    val top: List<com.example.newproject.main.Result>
 )
