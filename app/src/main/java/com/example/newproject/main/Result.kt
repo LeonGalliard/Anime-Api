@@ -40,3 +40,4 @@ data class JPG(
     @SerializedName("image_url")
     val image_url: String
 )
+)
