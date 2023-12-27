@@ -1,4 +1,4 @@
-package com.example.newproject.api
+package com.example.newproject.main.api
 
 import com.example.newproject.SearchedAnime
 import com.example.newproject.TopAnime
